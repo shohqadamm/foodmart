@@ -61,3 +61,11 @@ function changeActivePosition(activeItem) {
     }
     activeItem.classList.add("active");
 }
+
+function show(smth, input){
+    document.querySelector(input).value = smth
+}
+let headerTopDropdown = document.querySelector('.header-top-dropdown')
+let headerBtmDropdown = document.querySelector('.header-btm-dropdown')
+headerTopDropdown.onclick = ()=>{headerTopDropdown.classList.toggle('active')}
+headerBtmDropdown.onclick = ()=>{headerBtmDropdown.classList.toggle('active')}

@@ -24,110 +24,14 @@
                         <span>Grocery Storm</span>
                     </div>
                     <div class="header-top-seachbox">
-                        <div class="select-box">
-                            <div class="select-box__current" tabindex="1">
-                                <div class="select-box__value">
-                                    <input
-                                        class="select-box__input"
-                                        type="radio"
-                                        id="0"
-                                        value="1"
-                                        name="Ben"
-                                        checked="checked"
-                                    />
-                                    <p class="select-box__input-text">
-                                        All Categories
-                                    </p>
-                                </div>
-                                <div class="select-box__value">
-                                    <input
-                                        class="select-box__input"
-                                        type="radio"
-                                        id="1"
-                                        value="2"
-                                        name="Ben"
-                                    />
-                                    <p class="select-box__input-text">Cheese</p>
-                                </div>
-                                <div class="select-box__value">
-                                    <input
-                                        class="select-box__input"
-                                        type="radio"
-                                        id="2"
-                                        value="3"
-                                        name="Ben"
-                                    />
-                                    <p class="select-box__input-text">Milk</p>
-                                </div>
-                                <div class="select-box__value">
-                                    <input
-                                        class="select-box__input"
-                                        type="radio"
-                                        id="3"
-                                        value="4"
-                                        name="Ben"
-                                    />
-                                    <p class="select-box__input-text">Honey</p>
-                                </div>
-                                <div class="select-box__value">
-                                    <input
-                                        class="select-box__input"
-                                        type="radio"
-                                        id="4"
-                                        value="5"
-                                        name="Ben"
-                                    />
-                                    <p class="select-box__input-text">Toast</p>
-                                </div>
-                                <img
-                                    class="select-box__icon"
-                                    src="http://cdn.onlinewebfonts.com/svg/img_295694.svg"
-                                    alt="Arrow Icon"
-                                    aria-hidden="true"
-                                />
+                        <div class="header-top-dropdown">
+                            <input type="text" class="textBox" placeholder="All Categories" readonly>
+                            <div class="options">
+                                <div onclick="show('Pasta & Rice', '.textBox')">Pasta & Rice</div>
+                                <div onclick="show('Soups & Canned Goods', '.textBox')">Soups & Canned Goods</div>
+                                <div onclick="show('Frozen Foods', '.textBox')">Frozen Foods</div>
+                                <div onclick="show('Dairy & Cheese & Eggs', '.textBox')">Dairy & Cheese & Eggs</div>
                             </div>
-                            <ul class="select-box__list">
-                                <li>
-                                    <label
-                                        class="select-box__option"
-                                        for="0"
-                                        aria-hidden="aria-hidden"
-                                        >Cream</label
-                                    >
-                                </li>
-                                <li>
-                                    <label
-                                        class="select-box__option"
-                                        for="1"
-                                        aria-hidden="aria-hidden"
-                                        >Cheese</label
-                                    >
-                                </li>
-                                <li>
-                                    <label
-                                        class="select-box__option"
-                                        for="2"
-                                        aria-hidden="aria-hidden"
-                                        >Milk</label
-                                    >
-                                </li>
-                                <li>
-                                    <label
-                                        class="select-box__option"
-                                        for="3"
-                                        aria-hidden="aria-hidden"
-                                        >Honey</label
-                                    >
-                                </li>
-                                <li>
-                                    <label
-                                        class="select-box__option"
-                                        for="4"
-                                        aria-hidden="aria-hidden"
-                                        >Toast</label
-                                    >
-                                </li>
-                            </ul>
                         </div>
                         <div class="header-top-input">
                             <input
@@ -169,110 +73,14 @@
             <hr />
             <div class="container">
                 <div class="header-bottom">
-                    <div class="select-box-btm">
-                        <div class="select-box-btm__current" tabindex="1">
-                            <div class="select-box-btm__value">
-                                <input
-                                    class="select-box-btm__input"
-                                    type="radio"
-                                    id="0"
-                                    value="1"
-                                    name="Ben"
-                                    checked="checked"
-                                />
-                                <p class="select-box-btm__input-text">
-                                    All Categories
-                                </p>
-                            </div>
-                            <div class="select-box-btm__value">
-                                <input
-                                    class="select-box-btm__input"
-                                    type="radio"
-                                    id="1"
-                                    value="2"
-                                    name="Ben"
-                                />
-                                <p class="select-box-btm__input-text">Cheese</p>
-                            </div>
-                            <div class="select-box-btm__value">
-                                <input
-                                    class="select-box-btm__input"
-                                    type="radio"
-                                    id="2"
-                                    value="3"
-                                    name="Ben"
-                                />
-                                <p class="select-box-btm__input-text">Milk</p>
-                            </div>
-                            <div class="select-box-btm__value">
-                                <input
-                                    class="select-box-btm__input"
-                                    type="radio"
-                                    id="3"
-                                    value="4"
-                                    name="Ben"
-                                />
-                                <p class="select-box-btm__input-text">Honey</p>
-                            </div>
-                            <div class="select-box-btm__value">
-                                <input
-                                    class="select-box-btm__input"
-                                    type="radio"
-                                    id="4"
-                                    value="5"
-                                    name="Ben"
-                                />
-                                <p class="select-box-btm__input-text">Toast</p>
-                            </div>
-                            <img
-                                class="select-box-btm__icon"
-                                src="http://cdn.onlinewebfonts.com/svg/img_295694.svg"
-                                alt="Arrow Icon"
-                                aria-hidden="true"
-                            />
+                    <div class="header-btm-dropdown">
+                        <input type="text" class="btm-categories" placeholder="All Categories" readonly>
+                        <div class="options">
+                            <div onclick="show('Dairy & Cheese', '.btm-categories')">Dairy & Cheese</div>
+                            <div onclick="show('Snacks & Crackers', '.btm-categories')">Snacks & Crackers</div>
+                            <div onclick="show('Produce', '.btm-categories')">Produce</div>
+                            <div onclick="show('Drinks', '.btm-categories')">Drinks</div>
                         </div>
-                        <ul class="select-box-btm__list">
-                            <li>
-                                <label
-                                    class="select-box-btm__option"
-                                    for="0"
-                                    aria-hidden="aria-hidden"
-                                    >Cream</label
-                                >
-                            </li>
-                            <li>
-                                <label
-                                    class="select-box-btm__option"
-                                    for="1"
-                                    aria-hidden="aria-hidden"
-                                    >Cheese</label
-                                >
-                            </li>
-                            <li>
-                                <label
-                                    class="select-box-btm__option"
-                                    for="2"
-                                    aria-hidden="aria-hidden"
-                                    >Milk</label
-                                >
-                            </li>
-                            <li>
-                                <label
-                                    class="select-box-btm__option"
-                                    for="3"
-                                    aria-hidden="aria-hidden"
-                                    >Honey</label
-                                >
-                            </li>
-                            <li>
-                                <label
-                                    class="select-box-btm__option"
-                                    for="4"
-                                    aria-hidden="aria-hidden"
-                                    >Toast</label
-                                >
-                            </li>
-                        </ul>
                     </div>
                     <ul class="header-bottom-links">
                         <li class="header-bottom-link active">
@@ -574,37 +382,27 @@
                             <ul>
                                 <div class="category-title active" id="product">
                                     <li>All</li>
-                                    <span
-                                        ><i class="fas fa-border-all"></i
-                                    ></span>
+                                   
                                 </div>
                                 <div class="category-title" id="fruit-vegas">
                                     <li>Fruits & Veges</li>
-                                    <span
-                                        ><i class="fas fa-theater-masks"></i
-                                    ></span>
+                                   
                                 </div>
                                 <div class="category-title" id="juices">
                                     <li>Juices</li>
-                                    <span><i class="fas fa-landmark"></i></span>
                                 </div>
                                 <div class="category-title" id="bread-sweets">
                                     <li>Breads & Sweets</li>
-                                    <span
-                                        ><i class="fas fa-chart-area"></i
-                                    ></span>
+                                    
                                 </div>
                                 <div class="category-title" id="oil-ghee">
                                     <li>Oil & Ghee</li>
-                                    <span><i class="fas fa-coins"></i></span>
                                 </div>
                                 <div class="category-title" id="raw-meats">
                                     <li>Raw Meats</li>
-                                    <span><i class="fas fa-running"></i></span>
                                 </div>
                                 <div class="category-title" id="natural-herbs">
                                     <li>Natural Herbs</li>
-                                    <span><i class="fas fa-running"></i></span>
                                 </div>
                             </ul>
                         </div>
@@ -2257,6 +2055,7 @@
         </main>
         <div class="footer">
             <div class="container">
+                
                 <div class="footer-bottom">
                     <p>© 2022 TemplatesJungle. All rights reserved.</p>
                     <p>
