@@ -4,6 +4,22 @@ $(".category-items").slick({
     infinite: true,
     slidesToShow: 6,
     slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true
+              }
+        },{
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
+    ]
 });
 $(".new-items").slick({
     prevArrow: ".new-prev",
@@ -11,6 +27,30 @@ $(".new-items").slick({
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 1220,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true
+              }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 3,
+                infinite: true
+              }
+        },{
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
+    ]
 });
 $(".offered-items").slick({
     prevArrow: ".offered-prev",
@@ -18,6 +58,30 @@ $(".offered-items").slick({
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 1220,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true
+              }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 3,
+                infinite: true
+              }
+        },{
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
+    ]
 });
 $(".bs-items").slick({
     prevArrow: ".bs-prev",
@@ -25,6 +89,30 @@ $(".bs-items").slick({
     infinite: true,
     slidesToShow: 5,
     slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 1220,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true
+              }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 3,
+                infinite: true
+              }
+        },{
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
+    ]
 });
 $(".jl-items").slick({
     prevArrow: ".js-prev",
@@ -32,7 +120,37 @@ $(".jl-items").slick({
     infinite: true,
     slidesToShow: 5,
     slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 1220,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true
+              }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 3,
+                infinite: true
+              }
+        },{
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
+    ]
 });
+
+const headerBurger = document.querySelector('.header-burger')
+headerBurger.addEventListener('click', ()=>{
+    document.querySelector('.header-bottom-links').classList.toggle('active')
+    document.querySelectorAll('.header-bottom-link').forEach((item)=>item.classList.toggle('toggle'))
+})
 
 const categoryTitle = document.querySelectorAll(".category-title");
 const allCategoryPosts = document.querySelectorAll(".product");

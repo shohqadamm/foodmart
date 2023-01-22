@@ -100,122 +100,7 @@ select {
 .main > div {
     margin: 200px 0;
 }
-/*********************/
-.select-box {
-    position: relative;
-    display: block;
-    width: 100px;
-    font-family: "Open Sans", "Helvetica Neue", "Segoe UI", "Calibri", "Arial",
-        sans-serif;
-    font-size: 0.8rem;
-    color: red;
-    background-color: #f0f0f0;
-}
-@media (min-width: 768px) {
-    .select-box {
-        width: 150px;
-    }
-}
-@media (min-width: 992px) {
-    .select-box {
-        width: 150px;
-    }
-}
-@media (min-width: 1200px) {
-    .select-box {
-        width: 150px;
-    }
-}
-.select-box__current {
-    position: relative;
-    cursor: pointer;
-    outline: none;
-    background-color: #f0f0f0;
-    color: red;
-}
 
-.select-box__current:focus + .select-box__list {
-    opacity: 1;
-    -webkit-animation-name: none;
-    animation-name: none;
-}
-.select-box__current:focus + .select-box__list .select-box__option {
-    cursor: pointer;
-}
-.select-box__current:focus .select-box__icon {
-    transform: translateY(-50%) rotate(180deg);
-}
-.select-box__icon {
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    transform: translateY(-50%);
-    width: 20px;
-    opacity: 0.3;
-    transition: 0.2s ease;
-}
-.select-box__value {
-    display: flex;
-}
-.select-box__input {
-    display: none;
-}
-.select-box__input:checked + .select-box__input-text {
-    display: block;
-}
-.select-box__input-text {
-    display: none;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-}
-.select-box__list {
-    position: absolute;
-    width: 100%;
-    padding: 0;
-    list-style: none;
-    opacity: 0;
-    -webkit-animation-name: HideList;
-    animation-name: HideList;
-    -webkit-animation-duration: 0.5s;
-    animation-duration: 0.5s;
-    -webkit-animation-delay: 0.5s;
-    animation-delay: 0.5s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    -webkit-animation-timing-function: step-start;
-    animation-timing-function: step-start;
-    box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
-}
-.select-box__option {
-    display: block;
-    padding: 15px;
-    background-color: #fff;
-}
-.select-box__option:hover,
-.select-box__option:focus {
-    color: #546c84;
-    background-color: #f0f0f0;
-}
-
-@-webkit-keyframes HideList {
-    from {
-        transform: scaleY(1);
-    }
-    to {
-        transform: scaleY(0);
-    }
-}
-
-@keyframes HideList {
-    from {
-        transform: scaleY(1);
-    }
-    to {
-        transform: scaleY(0);
-    }
-}
 /****************************************/
 
 /* header top */
@@ -231,6 +116,9 @@ select {
 }
 hr {
     border-color: #d0d0d0;
+}
+.header-burger{
+    display: none;
 }
 .header-top-seachbox {
     background-color: #f0f0f0;
@@ -297,7 +185,7 @@ hr {
     background-color: transparent;
     border-left: 2px solid #d0d0d0;
     padding: 0 5px;
-    width: 350px;
+    width: 70%;
     font-size: 1rem;
     margin: 5px 0;
     border: 0;
@@ -307,6 +195,7 @@ hr {
 .header-top-input {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin: 0 5px;
 }
 
@@ -323,7 +212,9 @@ hr {
     display: flex;
     align-items: center;
 }
-
+.header-top-contact  h2{
+    font-size: 1.2rem;
+}
 .acc-icon {
     background-color: #f0f0f0;
     padding: 15px;
@@ -358,7 +249,7 @@ hr {
 .header-btm-dropdown {
     position: relative;
     width: 200px;
-    /* height: 50px; */
+    height: 50px;
 }
 .header-btm-dropdown::before {
     content: "";
@@ -553,7 +444,7 @@ hr {
     background-color: #e9f3f8;
     display: flex;
     gap: 50px;
-    padding: 100px 200px;
+    padding: 100px;
 }
 .contact .container .contact-text {
     flex: 1 1 auto;
@@ -614,8 +505,9 @@ hr {
     display: flex;
     gap: 50px;
     align-items: center;
+    justify-content: center;
     height: 60vh;
-    padding: 50px 200px 50px 300px;
+    /* padding: 50px 200px 50px 300px; */
 }
 .app-inner .app-content p {
     margin: 30px 0;
@@ -838,4 +730,128 @@ hr {
 
 .category-title.active {
     border-bottom: 1px solid #ffc43f;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body{
+        background-color: red;
+
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body{
+        background-color: green;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+   .header-burger{
+    display: block;
+    font-size: 1.5rem;
+   }
+   .header-bottom-links.active{
+    width: 90%;
+    background-color: #ed8939;
+    border-radius: 20px;
+    flex-direction: column;
+   }
+   .header-bottom-link{
+    display: none;
+   }
+   .header-bottom-link.toggle{
+    display: block;
+    margin: 0 20px;
+   }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    body{
+        background-color: yellow;
+    }
+    .header-top{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+  
+    .showcase-inner{
+        grid-template-columns: 1fr;
+    }
+    .showcase-inner>div{
+        grid-area: auto;
+    }
+    .new-added-item{
+        flex-direction: column;
+    }
+    .slider-top{
+        align-items: center;
+        flex-direction: column;
+    }
+    .discounts-inner{
+        flex-direction: column;
+    }
+    .contact .container {
+        flex-direction: column;
+    }
+    .contact .container .contact-text h1, .contact .container .contact-text h1 span{
+        font-size: 1.8rem;
+    }
+    .articles-inner{
+        flex-direction: column;
+    }
+    .articles-item{
+        text-align: center;
+    }
+    .articles-item .article-time{
+        justify-content: center;
+    }
+    .tag{
+        padding: 10px
+    }
+    .services .container{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .services .service{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .app img{
+        display: none;
+    }
+    .app .app-inner{
+        width: 100%;
+    }
+    .app-content{
+        padding: 0 50px;
+    }
+    .footer-top{
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-bottom{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1220px) {
+    body{
+        background-color: purple;
+    }
+    .header-bottom{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
 }
