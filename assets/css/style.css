@@ -779,25 +779,19 @@ hr {
     .showcase-inner>div{
         grid-area: auto;
     }
-    .new-added-item{
-        flex-direction: column;
-    }
+ 
     .slider-top{
         align-items: center;
         flex-direction: column;
     }
-    .discounts-inner{
+    .discounts-inner,  .articles-inner,.articles-item,.contact .container,.new-added-item {
         flex-direction: column;
     }
-    .contact .container {
-        flex-direction: column;
-    }
+  
     .contact .container .contact-text h1, .contact .container .contact-text h1 span{
         font-size: 1.8rem;
     }
-    .articles-inner{
-        flex-direction: column;
-    }
+  
     .articles-item{
         text-align: center;
     }
