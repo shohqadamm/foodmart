@@ -737,6 +737,9 @@ hr {
     .container{
         width: 100%;
     }
+    .header .header-top-seachbox, .header-top-contact{
+        flex-direction: column;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -757,7 +760,9 @@ hr {
     display: block;
     margin: 0 20px;
    }
-
+   .discounts-inner .discount-item-one,  .discounts-inner .discount-item-two, .discounts-inner .discount-item-one {
+    padding: 50px
+   }
 .footer .container .footer-bottom {
     flex-direction: column;
 }
@@ -768,7 +773,9 @@ hr {
         align-items: center;
         gap: 20px;
     }
-  
+    .nav-buttons{
+        margin: 20px 0;
+    }
     .showcase-inner{
         grid-template-columns: 1fr;
     }
