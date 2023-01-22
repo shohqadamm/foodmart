@@ -760,8 +760,8 @@ hr {
     display: block;
     margin: 0 20px;
    }
-   .discounts-inner .discount-item-one,  .discounts-inner .discount-item-two, .discounts-inner .discount-item-one {
-    padding: 50px
+   .showcase-inner>div, .contact .container, .discounts-inner .discount-item-one,  .discounts-inner .discount-item-two, .discounts-inner .discount-item-one {
+    padding: 30px
    }
 .footer .container .footer-bottom {
     flex-direction: column;
@@ -797,6 +797,9 @@ hr {
   
     .articles-item{
         text-align: center;
+    }
+    .articles-item img{
+        width: 100%;
     }
     .articles-item .article-time{
         justify-content: center;
