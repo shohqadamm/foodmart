@@ -249,7 +249,7 @@ hr {
 .header-btm-dropdown {
     position: relative;
     width: 200px;
-    height: 50px;
+    height: 40px;
 }
 .header-btm-dropdown::before {
     content: "";
@@ -733,23 +733,17 @@ hr {
 }
 
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 468px) {
     body{
         background-color: red;
 
     }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    body{
-        background-color: green;
+    .container{
+        width: 100%;
     }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
    .header-burger{
     display: block;
     font-size: 1.5rem;
@@ -767,13 +761,12 @@ hr {
     display: block;
     margin: 0 20px;
    }
-}
 
-/* Large devices (laptops/desktops, 992px and up) */
+.footer .container .footer-bottom {
+    flex-direction: column;
+}
+}
 @media only screen and (max-width: 992px) {
-    body{
-        background-color: yellow;
-    }
     .header-top{
         flex-direction: column;
         align-items: center;
@@ -844,14 +837,11 @@ hr {
     }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1220px) {
-    body{
-        background-color: purple;
-    }
+/*    
     .header-bottom{
         flex-direction: column;
         align-items: center;
         gap: 20px;
-    }
+    } */
 }
