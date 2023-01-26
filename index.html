@@ -14,49 +14,51 @@
             referrerpolicy="no-referrer"
         />
         <link rel="stylesheet" href="./assets/slick/slick.css" />
+        <link rel="stylesheet" href="./assets/dist/css/splide.min.css" />
     </head>
     <body>
         <header class="header">
-            <div class="container">
-                <div class="header-top">
+            <div class="header-top">
+                    <div class="container">
                     <div class="header-top-brand">
-                        <img src="./assets/images/logo.png" alt="">
-                    </div>
-                    <div class="header-top-seachbox">
-                        <div class="header-top-dropdown">
-                            <input
-                                type="text"
-                                class="textBox"
-                                placeholder="All Categories"
-                                readonly
-                            />
-                            <div class="options">
-                                <div onclick="show('Pasta & Rice', '.textBox')">
-                                    Pasta & Rice
-                                </div>
-                                <div
-                                    onclick="show('Soups & Canned Goods', '.textBox')"
-                                >
-                                    Soups & Canned Goods
-                                </div>
-                                <div onclick="show('Frozen Foods', '.textBox')">
-                                    Frozen Foods
-                                </div>
-                                <div
-                                    onclick="show('Dairy & Cheese & Eggs', '.textBox')"
-                                >
-                                    Dairy & Cheese & Eggs
+                        <img src="./assets/images/logo.png" alt="" />
+                        <div class="header-top-seachbox">
+                            <div class="header-top-dropdown"s>
+                                <input
+                                    type="text"
+                                    class="textBox"
+                                    placeholder="All Categories"
+                                    readonly
+                                />
+                                <div class="options">
+                                    <div onclick="show('Pasta & Rice', '.textBox')">
+                                        Pasta & Rice
+                                    </div>
+                                    <div
+                                        onclick="show('Soups & Canned Goods', '.textBox')"
+                                    >
+                                        Soups & Canned Goods
+                                    </div>
+                                    <div onclick="show('Frozen Foods', '.textBox')">
+                                        Frozen Foods
+                                    </div>
+                                    <div
+                                        onclick="show('Dairy & Cheese & Eggs', '.textBox')"
+                                    >
+                                        Dairy & Cheese & Eggs
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="header-top-input">
-                            <input
-                                type="text"
-                                placeholder="Search for more than 20,000 products"
-                            />
-                            <i class="fas fa-search"></i>
+                            <div class="header-top-input">
+                                <input
+                                    type="text"
+                                    placeholder="Search for more than 20,000 products"
+                                />
+                                <i class="fas fa-search"></i>
+                            </div>
                         </div>
                     </div>
+                   
                     <div class="header-top-contact">
                         <div class="support">
                             <span>For Support?</span>
@@ -86,55 +88,58 @@
                     </div>
                 </div>
             </div>
-            <hr />
             <div class="container">
                 <div class="header-bottom">
-                    <div class="header-btm-dropdown">
-                        <input
-                            type="text"
-                            class="btm-categories"
-                            placeholder="All Categories"
-                            readonly
-                        />
-                        <div class="options">
-                            <div
-                                onclick="show('Dairy & Cheese', '.btm-categories')"
-                            >
-                                Dairy & Cheese
-                            </div>
-                            <div
-                                onclick="show('Snacks & Crackers', '.btm-categories')"
-                            >
-                                Snacks & Crackers
-                            </div>
-                            <div onclick="show('Produce', '.btm-categories')">
-                                Produce
-                            </div>
-                            <div onclick="show('Drinks', '.btm-categories')">
-                                Drinks
+                    <div class="header-bottom-left">
+                        <div class="header-btm-dropdown">
+                            <input
+                                type="text"
+                                class="btm-categories"
+                                placeholder="Shop By Departments"
+                                readonly
+                            />
+                            <div class="options">
+                                <div
+                                    onclick="show('Dairy & Cheese', '.btm-categories')"
+                                >
+                                    Dairy & Cheese
+                                </div>
+                                <div
+                                    onclick="show('Snacks & Crackers', '.btm-categories')"
+                                >
+                                    Snacks & Crackers
+                                </div>
+                                <div onclick="show('Produce', '.btm-categories')">
+                                    Produce
+                                </div>
+                                <div onclick="show('Drinks', '.btm-categories')">
+                                    Drinks
+                                </div>
                             </div>
                         </div>
+                        <ul class="header-bottom-links">
+                            <button class="btn btn-yellow header-burger">
+                                <i class="fas fa-grip-lines"></i>
+                            </button>
+                            <li class="header-bottom-link active">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="header-bottom-link"><a href="#">Shop</a></li>
+                            <li class="header-bottom-link"><a href="#">Page</a></li>
+                            <li class="header-bottom-link">
+                                <a href="#">Services</a>
+                            </li>
+                            <li class="header-bottom-link"><a href="#">Blog</a></li>
+                            <li class="header-bottom-link">
+                                <a href="#">Contact</a>
+                            </li>
+                            <li class="header-bottom-link">
+                                <a href="#">Offers</a>
+                            </li>
+                        </ul>
                     </div>
-                    <ul class="header-bottom-links">
-                        <button class="btn btn-yellow header-burger"><i class="fas fa-grip-lines"></i></button>
-                        <li class="header-bottom-link active">
-                            <a href="#">Home</a>
-                        </li>
-                        <li class="header-bottom-link"><a href="#">Shop</a></li>
-                        <li class="header-bottom-link"><a href="#">Page</a></li>
-                        <li class="header-bottom-link">
-                            <a href="#">Services</a>
-                        </li>
-                        <li class="header-bottom-link"><a href="#">Blog</a></li>
-                        <li class="header-bottom-link">
-                            <a href="#">Contact</a>
-                        </li>
-                        <li class="header-bottom-link">
-                            <a href="#">Offers</a>
-                        </li>
-                    </ul>
                     <div class="header-bottom-coupon">
-                        <i style="color: #fc5" class="fas fa-gift"></i>
+                        <i style="color: #FFA801; font-size: 1.3rem; margin-right: 5px;" class="fas fa-gift"></i>
                         <span class="text-bold">Get Your Coupon Codes</span>
                     </div>
                 </div>
@@ -145,20 +150,69 @@
             <div class="showcase">
                 <div class="container">
                     <div class="showcase-inner">
-                        <div class="showcase-item-one">
-                            <div class="item-content">
-                                <span class="item-text text-yellow"
-                                    >100% Natural</span
-                                >
-                                <h1>Fresh Smoothie & Summer Juice</h1>
-                                <p class="text-primary">
-                                    Best selling summer juice with natural
-                                    extracts.
-                                </p>
-                                <button class="btn btn-outline">
-                                    SHOP NOW
-                                </button>
-                            </div>
+                        <div class="showcase-item-one splide" >
+                            <!-- <section class=""> -->
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <li class="splide__slide">
+                                            <div class="item-content">
+                                                <span
+                                                    class="item-text text-yellow"
+                                                    >100% Natural</span
+                                                >
+                                                <h1>
+                                                    Fresh Smoothie & Summer
+                                                    Juice
+                                                </h1>
+                                                <p class="text-primary">
+                                                    Best selling summer juice
+                                                    with natural extracts.
+                                                </p>
+                                                <button class="btn btn-outline">
+                                                    SHOP NOW
+                                                </button>
+                                            </div>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="item-content">
+                                                <span
+                                                    class="item-text text-yellow"
+                                                    >50% Natural</span
+                                                >
+                                                <h1>
+                                                    Fresh Smoothie & Summer
+                                                    Juice
+                                                </h1>
+                                                <p class="text-primary">
+                                                    Best selling summer juice
+                                                    with natural extracts.
+                                                </p>
+                                                <button class="btn btn-outline">
+                                                    SHOP NOW
+                                                </button>
+                                            </div>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="item-content">
+                                                <span
+                                                    class="item-text text-yellow"
+                                                    >20% Natural</span
+                                                >
+                                                <h1>
+                                                    Fresh Smoothie & Summer
+                                                    Juice
+                                                </h1>
+                                                <p class="text-primary">
+                                                    Best selling summer juice
+                                                    with natural extracts.
+                                                </p>
+                                                <button class="btn btn-outline">
+                                                    SHOP NOW
+                                                </button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                         </div>
                         <div class="showcase-item-two">
                             <div class="item-content">
@@ -453,7 +507,7 @@
                                             -25%</span
                                         >
                                         <span class="product-heart"
-                                            ><i class="fas fa-heart"></i
+                                            ><i class="far fa-heart"></i
                                         ></span>
                                     </div>
                                     <h3>Sunstar Fresh Melon Juice</h3>
@@ -473,8 +527,8 @@
                                     </div>
                                     <div class="product-cart">
                                         <div class="add">
-                                            <span class="btn btn-dec">-</span
-                                            >1<span class="btn btn-dec">+</span>
+                                            <span class="btn btn-dec qt-minus">-</span
+                                            ><span class="qt">1</span></spa><span class="btn btn-inc qt-plus">+</span>
                                         </div>
                                         <div class="add-btn">
                                             Add To Cart
@@ -494,7 +548,7 @@
                                             -25%</span
                                         >
                                         <span class="product-heart"
-                                            ><i class="fas fa-heart"></i
+                                            ><i class="far fa-heart"></i
                                         ></span>
                                     </div>
                                     <h3>Fresh Bananas</h3>
@@ -514,8 +568,8 @@
                                     </div>
                                     <div class="product-cart">
                                         <div class="add">
-                                            <span class="btn btn-dec">-</span
-                                            >1<span class="btn btn-dec">+</span>
+                                            <span class="btn btn-dec qt-minus">-</span
+                                            ><span class="qt">1</span></spa><span class="btn btn-inc qt-plus">+</span>
                                         </div>
                                         <div class="add-btn">
                                             Add To Cart
@@ -535,7 +589,7 @@
                                             -25%</span
                                         >
                                         <span class="product-heart"
-                                            ><i class="fas fa-heart"></i
+                                            ><i class="far fa-heart"></i
                                         ></span>
                                     </div>
                                     <h3>Munch Crunchy Cookies</h3>
@@ -555,8 +609,8 @@
                                     </div>
                                     <div class="product-cart">
                                         <div class="add">
-                                            <span class="btn btn-dec">-</span
-                                            >1<span class="btn btn-dec">+</span>
+                                            <span class="btn btn-dec qt-minus">-</span
+                                            ><span class="qt">1</span><span class="btn btn-inc qt-plus">+</span>
                                         </div>
                                         <div class="add-btn">
                                             Add To Cart
@@ -576,7 +630,7 @@
                                             -25%</span
                                         >
                                         <span class="product-heart"
-                                            ><i class="fas fa-heart"></i
+                                            ><i class="far fa-heart"></i
                                         ></span>
                                     </div>
                                     <h3>Fresh Cucumber</h3>
@@ -596,8 +650,8 @@
                                     </div>
                                     <div class="product-cart">
                                         <div class="add">
-                                            <span class="btn btn-dec">-</span
-                                            >1<span class="btn btn-dec">+</span>
+                                            <span class="btn btn-dec qt-minus">-</span
+                                            ><span class="qt">1</span><span class="btn btn-inc qt-plus">+</span>
                                         </div>
                                         <div class="add-btn">
                                             Add To Cart
@@ -617,7 +671,7 @@
                                             -25%</span
                                         >
                                         <span class="product-heart"
-                                            ><i class="fas fa-heart"></i
+                                            ><i class="far fa-heart"></i
                                         ></span>
                                     </div>
                                     <h3>Heinz tomato ketchup</h3>
@@ -637,8 +691,8 @@
                                     </div>
                                     <div class="product-cart">
                                         <div class="add">
-                                            <span class="btn btn-dec">-</span
-                                            >1<span class="btn btn-dec">+</span>
+                                            <span class="btn btn-dec qt-minus">-</span
+                                            ><span class="qt">1</span><span class="btn btn-inc qt-plus">+</span>
                                         </div>
                                         <div class="add-btn">
                                             Add To Cart
@@ -658,7 +712,7 @@
                                             -25%</span
                                         >
                                         <span class="product-heart"
-                                            ><i class="fas fa-heart"></i
+                                            ><i class="far fa-heart"></i
                                         ></span>
                                     </div>
                                     <h3>Local Avocado</h3>
@@ -678,8 +732,8 @@
                                     </div>
                                     <div class="product-cart">
                                         <div class="add">
-                                            <span class="btn btn-dec">-</span
-                                            >1<span class="btn btn-dec">+</span>
+                                            <span class="btn btn-dec qt-minus">-</span
+                                            ><span class="qt">1</span><span class="btn btn-inc qt-plus">+</span>
                                         </div>
                                         <div class="add-btn">
                                             Add To Cart
@@ -699,7 +753,7 @@
                                             -25%</span
                                         >
                                         <span class="product-heart"
-                                            ><i class="fas fa-heart"></i
+                                            ><i class="far fa-heart"></i
                                         ></span>
                                     </div>
                                     <h3>Fresh Orange Juice</h3>
@@ -719,8 +773,8 @@
                                     </div>
                                     <div class="product-cart">
                                         <div class="add">
-                                            <span class="btn btn-dec">-</span
-                                            >1<span class="btn btn-dec">+</span>
+                                            <span class="btn btn-dec qt-minus">-</span
+                                            ><span class="qt">1</span><span class="btn btn-inc qt-plus">+</span>
                                         </div>
                                         <div class="add-btn">
                                             Add To Cart
@@ -740,7 +794,7 @@
                                             -25%</span
                                         >
                                         <span class="product-heart"
-                                            ><i class="fas fa-heart"></i
+                                            ><i class="far fa-heart"></i
                                         ></span>
                                     </div>
                                     <h3>Fresh local tomatoes</h3>
@@ -760,8 +814,8 @@
                                     </div>
                                     <div class="product-cart">
                                         <div class="add">
-                                            <span class="btn btn-dec">-</span
-                                            >1<span class="btn btn-dec">+</span>
+                                            <span class="btn btn-dec qt-minus">-</span
+                                            ><span class="qt">1</span><span class="btn btn-inc qt-plus">+</span>
                                         </div>
                                         <div class="add-btn">
                                             Add To Cart
@@ -781,7 +835,7 @@
                                             -25%</span
                                         >
                                         <span class="product-heart"
-                                            ><i class="fas fa-heart"></i
+                                            ><i class="far fa-heart"></i
                                         ></span>
                                     </div>
                                     <h3>Pure Dairy milk</h3>
@@ -801,8 +855,8 @@
                                     </div>
                                     <div class="product-cart">
                                         <div class="add">
-                                            <span class="btn btn-dec">-</span
-                                            >1<span class="btn btn-dec">+</span>
+                                            <span class="btn btn-dec qt-minus">-</span
+                                            ><span class="qt">1</span><span class="btn btn-inc qt-plus">+</span>
                                         </div>
                                         <div class="add-btn">
                                             Add To Cart
@@ -822,7 +876,7 @@
                                             -25%</span
                                         >
                                         <span class="product-heart"
-                                            ><i class="fas fa-heart"></i
+                                            ><i class="far fa-heart"></i
                                         ></span>
                                     </div>
                                     <h3>Raspberries</h3>
@@ -842,8 +896,8 @@
                                     </div>
                                     <div class="product-cart">
                                         <div class="add">
-                                            <span class="btn btn-dec">-</span
-                                            >1<span class="btn btn-dec">+</span>
+                                            <span class="btn btn-dec qt-minus">-</span
+                                            ><span class="qt">1</span><span class="btn btn-inc qt-plus">+</span>
                                         </div>
                                         <div class="add-btn">
                                             Add To Cart
@@ -916,7 +970,7 @@
                                 />
                                 <span class="product-discount"> -25%</span>
                                 <span class="product-heart"
-                                    ><i class="fas fa-heart"></i
+                                    ><i class="far fa-heart"></i
                                 ></span>
                             </div>
                             <h3>Pacific barista beverage</h3>
@@ -932,8 +986,8 @@
                             </div>
                             <div class="product-cart">
                                 <div class="add">
-                                    <span class="btn btn-dec">-</span>1<span
-                                        class="btn btn-dec"
+                                    <span class="btn btn-dec qt-minus">-</span><soan class="qt">0</soan><span
+                                        class="btn btn-dec qt-minus"
                                         >+</span
                                     >
                                 </div>
@@ -951,7 +1005,7 @@
                                 />
                                 <span class="product-discount"> -25%</span>
                                 <span class="product-heart"
-                                    ><i class="fas fa-heart"></i
+                                    ><i class="far fa-heart"></i
                                 ></span>
                             </div>
                             <h3>Kombucha local lilikoi</h3>
@@ -967,8 +1021,8 @@
                             </div>
                             <div class="product-cart">
                                 <div class="add">
-                                    <span class="btn btn-dec">-</span>1<span
-                                        class="btn btn-dec"
+                                    <span class="btn btn-dec qt-minus">-</span><soan class="qt">0</soan><span
+                                        class="btn btn-dec qt-minus"
                                         >+</span
                                     >
                                 </div>
@@ -986,7 +1040,7 @@
                                 />
                                 <span class="product-discount"> -25%</span>
                                 <span class="product-heart"
-                                    ><i class="fas fa-heart"></i
+                                    ><i class="far fa-heart"></i
                                 ></span>
                             </div>
                             <h3>Cheese flavoured Lays</h3>
@@ -1002,8 +1056,8 @@
                             </div>
                             <div class="product-cart">
                                 <div class="add">
-                                    <span class="btn btn-dec">-</span>1<span
-                                        class="btn btn-dec"
+                                    <span class="btn btn-dec qt-minus">-</span>1<span
+                                        class="btn btn-dec qt-minus"
                                         >+</span
                                     >
                                 </div>
@@ -1021,7 +1075,7 @@
                                 />
                                 <span class="product-discount"> -25%</span>
                                 <span class="product-heart"
-                                    ><i class="fas fa-heart"></i
+                                    ><i class="far fa-heart"></i
                                 ></span>
                             </div>
                             <h3>Oat milk barista</h3>
@@ -1037,8 +1091,8 @@
                             </div>
                             <div class="product-cart">
                                 <div class="add">
-                                    <span class="btn btn-dec">-</span>1<span
-                                        class="btn btn-dec"
+                                    <span class="btn btn-dec qt-minus">-</span>1<span
+                                        class="btn btn-dec qt-minus"
                                         >+</span
                                     >
                                 </div>
@@ -1056,7 +1110,7 @@
                                 />
                                 <span class="product-discount"> -25%</span>
                                 <span class="product-heart"
-                                    ><i class="fas fa-heart"></i
+                                    ><i class="far fa-heart"></i
                                 ></span>
                             </div>
                             <h3>Dr. raw relax hearts</h3>
@@ -1072,8 +1126,8 @@
                             </div>
                             <div class="product-cart">
                                 <div class="add">
-                                    <span class="btn btn-dec">-</span>1<span
-                                        class="btn btn-dec"
+                                    <span class="btn btn-dec qt-minus">-</span>1<span
+                                        class="btn btn-dec qt-minus"
                                         >+</span
                                     >
                                 </div>
@@ -1156,7 +1210,7 @@
                                 />
                                 <span class="product-discount"> -25%</span>
                                 <span class="product-heart"
-                                    ><i class="fas fa-heart"></i
+                                    ><i class="far fa-heart"></i
                                 ></span>
                             </div>
                             <h3>Suzane creamy Cupcake</h3>
@@ -1172,8 +1226,8 @@
                             </div>
                             <div class="product-cart">
                                 <div class="add">
-                                    <span class="btn btn-dec">-</span>1<span
-                                        class="btn btn-dec"
+                                    <span class="btn btn-dec qt-minus">-</span>1<span
+                                        class="btn btn-dec qt-minus"
                                         >+</span
                                     >
                                 </div>
@@ -1191,7 +1245,7 @@
                                 />
                                 <span class="product-discount"> -25%</span>
                                 <span class="product-heart"
-                                    ><i class="fas fa-heart"></i
+                                    ><i class="far fa-heart"></i
                                 ></span>
                             </div>
                             <h3>Amber pure honey</h3>
@@ -1207,8 +1261,8 @@
                             </div>
                             <div class="product-cart">
                                 <div class="add">
-                                    <span class="btn btn-dec">-</span>1<span
-                                        class="btn btn-dec"
+                                    <span class="btn btn-dec qt-minus">-</span>1<span
+                                        class="btn btn-dec qt-minus"
                                         >+</span
                                     >
                                 </div>
@@ -1226,7 +1280,7 @@
                                 />
                                 <span class="product-discount"> -25%</span>
                                 <span class="product-heart"
-                                    ><i class="fas fa-heart"></i
+                                    ><i class="far fa-heart"></i
                                 ></span>
                             </div>
                             <h3>Fruits & Veges</h3>
@@ -1242,8 +1296,8 @@
                             </div>
                             <div class="product-cart">
                                 <div class="add">
-                                    <span class="btn btn-dec">-</span>1<span
-                                        class="btn btn-dec"
+                                    <span class="btn btn-dec qt-minus">-</span>1<span
+                                        class="btn btn-dec qt-minus"
                                         >+</span
                                     >
                                 </div>
@@ -1261,7 +1315,7 @@
                                 />
                                 <span class="product-discount"> -25%</span>
                                 <span class="product-heart"
-                                    ><i class="fas fa-heart"></i
+                                    ><i class="far fa-heart"></i
                                 ></span>
                             </div>
                             <h3>Pharma Cashew butter</h3>
@@ -1277,8 +1331,8 @@
                             </div>
                             <div class="product-cart">
                                 <div class="add">
-                                    <span class="btn btn-dec">-</span>1<span
-                                        class="btn btn-dec"
+                                    <span class="btn btn-dec qt-minus">-</span>1<span
+                                        class="btn btn-dec qt-minus"
                                         >+</span
                                     >
                                 </div>
@@ -1296,7 +1350,7 @@
                                 />
                                 <span class="product-discount"> -25%</span>
                                 <span class="product-heart"
-                                    ><i class="fas fa-heart"></i
+                                    ><i class="far fa-heart"></i
                                 ></span>
                             </div>
                             <h3>Pure Dairy milk</h3>
@@ -1312,8 +1366,8 @@
                             </div>
                             <div class="product-cart">
                                 <div class="add">
-                                    <span class="btn btn-dec">-</span>1<span
-                                        class="btn btn-dec"
+                                    <span class="btn btn-dec qt-minus">-</span>1<span
+                                        class="btn btn-dec qt-minus"
                                         >+</span
                                     >
                                 </div>
@@ -1331,7 +1385,7 @@
                                 />
                                 <span class="product-discount"> -25%</span>
                                 <span class="product-heart"
-                                    ><i class="fas fa-heart"></i
+                                    ><i class="far fa-heart"></i
                                 ></span>
                             </div>
                             <h3>Suzane creamy Cupcake</h3>
@@ -1347,8 +1401,8 @@
                             </div>
                             <div class="product-cart">
                                 <div class="add">
-                                    <span class="btn btn-dec">-</span>1<span
-                                        class="btn btn-dec"
+                                    <span class="btn btn-dec qt-minus">-</span>1<span
+                                        class="btn btn-dec qt-minus"
                                         >+</span
                                     >
                                 </div>
@@ -1366,7 +1420,7 @@
                                 />
                                 <span class="product-discount"> -25%</span>
                                 <span class="product-heart"
-                                    ><i class="fas fa-heart"></i
+                                    ><i class="far fa-heart"></i
                                 ></span>
                             </div>
                             <h3>Amber pure honey</h3>
@@ -1382,8 +1436,8 @@
                             </div>
                             <div class="product-cart">
                                 <div class="add">
-                                    <span class="btn btn-dec">-</span>1<span
-                                        class="btn btn-dec"
+                                    <span class="btn btn-dec qt-minus">-</span>1<span
+                                        class="btn btn-dec qt-minus"
                                         >+</span
                                     >
                                 </div>
@@ -1401,7 +1455,7 @@
                                 />
                                 <span class="product-discount"> -25%</span>
                                 <span class="product-heart"
-                                    ><i class="fas fa-heart"></i
+                                    ><i class="far fa-heart"></i
                                 ></span>
                             </div>
                             <h3>Fruits & Veges</h3>
@@ -1417,8 +1471,8 @@
                             </div>
                             <div class="product-cart">
                                 <div class="add">
-                                    <span class="btn btn-dec">-</span>1<span
-                                        class="btn btn-dec"
+                                    <span class="btn btn-dec qt-minus">-</span>1<span
+                                        class="btn btn-dec qt-minus"
                                         >+</span
                                     >
                                 </div>
@@ -1436,7 +1490,7 @@
                                 />
                                 <span class="product-discount"> -25%</span>
                                 <span class="product-heart"
-                                    ><i class="fas fa-heart"></i
+                                    ><i class="far fa-heart"></i
                                 ></span>
                             </div>
                             <h3>Pharma Cashew butter</h3>
@@ -1452,8 +1506,8 @@
                             </div>
                             <div class="product-cart">
                                 <div class="add">
-                                    <span class="btn btn-dec">-</span>1<span
-                                        class="btn btn-dec"
+                                    <span class="btn btn-dec qt-minus">-</span>1<span
+                                        class="btn btn-dec qt-minus"
                                         >+</span
                                     >
                                 </div>
@@ -1471,7 +1525,7 @@
                                 />
                                 <span class="product-discount"> -25%</span>
                                 <span class="product-heart"
-                                    ><i class="fas fa-heart"></i
+                                    ><i class="far fa-heart"></i
                                 ></span>
                             </div>
                             <h3>Pure Dairy milk</h3>
@@ -1487,8 +1541,8 @@
                             </div>
                             <div class="product-cart">
                                 <div class="add">
-                                    <span class="btn btn-dec">-</span>1<span
-                                        class="btn btn-dec"
+                                    <span class="btn btn-dec qt-minus">-</span>1<span
+                                        class="btn btn-dec qt-minus"
                                         >+</span
                                     >
                                 </div>
@@ -1524,7 +1578,7 @@
                                 />
                                 <span class="product-discount"> -25%</span>
                                 <span class="product-heart"
-                                    ><i class="fas fa-heart"></i
+                                    ><i class="far fa-heart"></i
                                 ></span>
                             </div>
                             <h3>Growers cider</h3>
@@ -1540,8 +1594,8 @@
                             </div>
                             <div class="product-cart">
                                 <div class="add">
-                                    <span class="btn btn-dec">-</span>1<span
-                                        class="btn btn-dec"
+                                    <span class="btn btn-dec qt-minus">-</span>1<span
+                                        class="btn btn-dec qt-minus"
                                         >+</span
                                     >
                                 </div>
@@ -1559,7 +1613,7 @@
                                 />
                                 <span class="product-discount"> -25%</span>
                                 <span class="product-heart"
-                                    ><i class="fas fa-heart"></i
+                                    ><i class="far fa-heart"></i
                                 ></span>
                             </div>
                             <h3>Fresh grapes</h3>
@@ -1575,8 +1629,8 @@
                             </div>
                             <div class="product-cart">
                                 <div class="add">
-                                    <span class="btn btn-dec">-</span>1<span
-                                        class="btn btn-dec"
+                                    <span class="btn btn-dec qt-minus">-</span>1<span
+                                        class="btn btn-dec qt-minus"
                                         >+</span
                                     >
                                 </div>
@@ -1594,7 +1648,7 @@
                                 />
                                 <span class="product-discount"> -25%</span>
                                 <span class="product-heart"
-                                    ><i class="fas fa-heart"></i
+                                    ><i class="far fa-heart"></i
                                 ></span>
                             </div>
                             <h3>Jelly beans exxotics</h3>
@@ -1610,8 +1664,8 @@
                             </div>
                             <div class="product-cart">
                                 <div class="add">
-                                    <span class="btn btn-dec">-</span>1<span
-                                        class="btn btn-dec"
+                                    <span class="btn btn-dec qt-minus">-</span>1<span
+                                        class="btn btn-dec qt-minus"
                                         >+</span
                                     >
                                 </div>
@@ -1629,7 +1683,7 @@
                                 />
                                 <span class="product-discount"> -25%</span>
                                 <span class="product-heart"
-                                    ><i class="fas fa-heart"></i
+                                    ><i class="far fa-heart"></i
                                 ></span>
                             </div>
                             <h3>Heinz tomato ketchup</h3>
@@ -1645,8 +1699,8 @@
                             </div>
                             <div class="product-cart">
                                 <div class="add">
-                                    <span class="btn btn-dec">-</span>1<span
-                                        class="btn btn-dec"
+                                    <span class="btn btn-dec qt-minus">-</span>1<span
+                                        class="btn btn-dec qt-minus"
                                         >+</span
                                     >
                                 </div>
@@ -1664,7 +1718,7 @@
                                 />
                                 <span class="product-discount"> -25%</span>
                                 <span class="product-heart"
-                                    ><i class="fas fa-heart"></i
+                                    ><i class="far fa-heart"></i
                                 ></span>
                             </div>
                             <h3>Sunstar Fresh Melon Juice</h3>
@@ -1680,8 +1734,8 @@
                             </div>
                             <div class="product-cart">
                                 <div class="add">
-                                    <span class="btn btn-dec">-</span>1<span
-                                        class="btn btn-dec"
+                                    <span class="btn btn-dec qt-minus">-</span>1<span
+                                        class="btn btn-dec qt-minus"
                                         >+</span
                                     >
                                 </div>
@@ -1699,7 +1753,7 @@
                                 />
                                 <span class="product-discount"> -25%</span>
                                 <span class="product-heart"
-                                    ><i class="fas fa-heart"></i
+                                    ><i class="far fa-heart"></i
                                 ></span>
                             </div>
                             <h3>Growers cider</h3>
@@ -1715,8 +1769,8 @@
                             </div>
                             <div class="product-cart">
                                 <div class="add">
-                                    <span class="btn btn-dec">-</span>1<span
-                                        class="btn btn-dec"
+                                    <span class="btn btn-dec qt-minus">-</span>1<span
+                                        class="btn btn-dec qt-minus"
                                         >+</span
                                     >
                                 </div>
@@ -1734,7 +1788,7 @@
                                 />
                                 <span class="product-discount"> -25%</span>
                                 <span class="product-heart"
-                                    ><i class="fas fa-heart"></i
+                                    ><i class="far fa-heart"></i
                                 ></span>
                             </div>
                             <h3>Fresh grapes</h3>
@@ -1750,8 +1804,8 @@
                             </div>
                             <div class="product-cart">
                                 <div class="add">
-                                    <span class="btn btn-dec">-</span>1<span
-                                        class="btn btn-dec"
+                                    <span class="btn btn-dec qt-minus">-</span>1<span
+                                        class="btn btn-dec qt-minus"
                                         >+</span
                                     >
                                 </div>
@@ -1769,7 +1823,7 @@
                                 />
                                 <span class="product-discount"> -25%</span>
                                 <span class="product-heart"
-                                    ><i class="fas fa-heart"></i
+                                    ><i class="far fa-heart"></i
                                 ></span>
                             </div>
                             <h3>Jelly beans exxotics</h3>
@@ -1785,8 +1839,8 @@
                             </div>
                             <div class="product-cart">
                                 <div class="add">
-                                    <span class="btn btn-dec">-</span>1<span
-                                        class="btn btn-dec"
+                                    <span class="btn btn-dec qt-minus">-</span>1<span
+                                        class="btn btn-dec qt-minus"
                                         >+</span
                                     >
                                 </div>
@@ -1804,7 +1858,7 @@
                                 />
                                 <span class="product-discount"> -25%</span>
                                 <span class="product-heart"
-                                    ><i class="fas fa-heart"></i
+                                    ><i class="far fa-heart"></i
                                 ></span>
                             </div>
                             <h3>Heinz tomato ketchup</h3>
@@ -1820,8 +1874,8 @@
                             </div>
                             <div class="product-cart">
                                 <div class="add">
-                                    <span class="btn btn-dec">-</span>1<span
-                                        class="btn btn-dec"
+                                    <span class="btn btn-dec qt-minus">-</span>1<span
+                                        class="btn btn-dec qt-minus"
                                         >+</span
                                     >
                                 </div>
@@ -1839,7 +1893,7 @@
                                 />
                                 <span class="product-discount"> -25%</span>
                                 <span class="product-heart"
-                                    ><i class="fas fa-heart"></i
+                                    ><i class="far fa-heart"></i
                                 ></span>
                             </div>
                             <h3>Sunstar Fresh Melon Juice</h3>
@@ -1855,8 +1909,8 @@
                             </div>
                             <div class="product-cart">
                                 <div class="add">
-                                    <span class="btn btn-dec">-</span>1<span
-                                        class="btn btn-dec"
+                                    <span class="btn btn-dec qt-minus">-</span>1<span
+                                        class="btn btn-dec qt-minus"
                                         >+</span
                                     >
                                 </div>
@@ -2022,65 +2076,65 @@
             <div class="services">
                 <div class="container">
                     <!-- <div class="services-inner"> -->
-                        <div class="service">
-                            <div class="service-image">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                            <div class="service-content">
-                                <h3>Free delivery</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipi
-                                    elit.
-                                </p>
-                            </div>
+                    <div class="service">
+                        <div class="service-image">
+                            <i class="fas fa-shopping-cart"></i>
                         </div>
-                        <div class="service">
-                            <div class="service-image">
-                                <i class="fas fa-shield"></i>
-                            </div>
-                            <div class="service-content">
-                                <h3>100% secure payment</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipi
-                                    elit.
-                                </p>
-                            </div>
+                        <div class="service-content">
+                            <h3>Free delivery</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipi
+                                elit.
+                            </p>
                         </div>
-                        <div class="service">
-                            <div class="service-image">
-                                <i class="fas fa-certificate"></i>
-                            </div>
-                            <div class="service-content">
-                                <h3>Quality guarantee</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipi
-                                    elit.
-                                </p>
-                            </div>
+                    </div>
+                    <div class="service">
+                        <div class="service-image">
+                            <i class="fas fa-shield"></i>
                         </div>
-                        <div class="service">
-                            <div class="service-image">
-                                <i class="fas fa-usd"></i>
-                            </div>
-                            <div class="service-content">
-                                <h3>guaranteed savings</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipi
-                                    elit.
-                                </p>
-                            </div>
+                        <div class="service-content">
+                            <h3>100% secure payment</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipi
+                                elit.
+                            </p>
                         </div>
-                        <div class="service">
-                            <div class="service-image">
-                                <i class="fas fa-bookmark"></i>
-                            </div>
-                            <div class="service-content">
-                                <h3>Daily offers</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipi
-                                    elit.
-                                </p>
-                            </div>
+                    </div>
+                    <div class="service">
+                        <div class="service-image">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Quality guarantee</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipi
+                                elit.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="service-image">
+                            <i class="fas fa-usd"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>guaranteed savings</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipi
+                                elit.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="service-image">
+                            <i class="fas fa-bookmark"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Daily offers</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipi
+                                elit.
+                            </p>
+                        </div>
                         <!-- </div> -->
                     </div>
                 </div>
@@ -2141,10 +2195,15 @@
                     </div>
                     <div class="footer-newsletter">
                         <h3>Our newsletter</h3>
-                        <p>Subscribe to our newsletter to get updates about our grand offers.</p>
+                        <p>
+                            Subscribe to our newsletter to get updates about our
+                            grand offers.
+                        </p>
                         <form>
-                            <input type="text">
-                            <button class="btn btn-dark">SEND <i class="fas fa-paper-plane"></i></button>
+                            <input type="text" />
+                            <button class="btn btn-dark">
+                                SEND <i class="fas fa-paper-plane"></i>
+                            </button>
                         </form>
                     </div>
                 </div>
@@ -2159,6 +2218,7 @@
                 </div>
             </div>
         </div>
+        <script src="./assets/dist/js/splide.min.js"></script>
         <script
             type="text/javascript"
             src="//code.jquery.com/jquery-1.11.0.min.js"

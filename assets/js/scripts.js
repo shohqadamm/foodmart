@@ -10,16 +10,17 @@ $(".category-items").slick({
             settings: {
                 slidesToShow: 3,
                 slidesToScroll: 3,
-                infinite: true
-              }
-        },{
+                infinite: true,
+            },
+        },
+        {
             breakpoint: 600,
             settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          },
-    ]
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            },
+        },
+    ],
 });
 $(".new-items").slick({
     prevArrow: ".new-prev",
@@ -33,24 +34,25 @@ $(".new-items").slick({
             settings: {
                 slidesToShow: 3,
                 slidesToScroll: 1,
-                infinite: true
-              }
+                infinite: true,
+            },
         },
         {
             breakpoint: 992,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 3,
-                infinite: true
-              }
-        },{
+                infinite: true,
+            },
+        },
+        {
             breakpoint: 600,
             settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          },
-    ]
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            },
+        },
+    ],
 });
 $(".offered-items").slick({
     prevArrow: ".offered-prev",
@@ -64,24 +66,25 @@ $(".offered-items").slick({
             settings: {
                 slidesToShow: 3,
                 slidesToScroll: 1,
-                infinite: true
-              }
+                infinite: true,
+            },
         },
         {
             breakpoint: 992,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 3,
-                infinite: true
-              }
-        },{
+                infinite: true,
+            },
+        },
+        {
             breakpoint: 600,
             settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          },
-    ]
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            },
+        },
+    ],
 });
 $(".bs-items").slick({
     prevArrow: ".bs-prev",
@@ -95,24 +98,25 @@ $(".bs-items").slick({
             settings: {
                 slidesToShow: 3,
                 slidesToScroll: 1,
-                infinite: true
-              }
+                infinite: true,
+            },
         },
         {
             breakpoint: 992,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 3,
-                infinite: true
-              }
-        },{
+                infinite: true,
+            },
+        },
+        {
             breakpoint: 600,
             settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          },
-    ]
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            },
+        },
+    ],
 });
 $(".jl-items").slick({
     prevArrow: ".js-prev",
@@ -126,31 +130,52 @@ $(".jl-items").slick({
             settings: {
                 slidesToShow: 3,
                 slidesToScroll: 1,
-                infinite: true
-              }
+                infinite: true,
+            },
         },
         {
             breakpoint: 992,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 3,
-                infinite: true
-              }
-        },{
+                infinite: true,
+            },
+        },
+        {
             breakpoint: 600,
             settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          },
-    ]
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            },
+        },
+    ],
 });
 
-const headerBurger = document.querySelector('.header-burger')
-headerBurger.addEventListener('click', ()=>{
-    document.querySelector('.header-bottom-links').classList.toggle('active')
-    document.querySelectorAll('.header-bottom-link').forEach((item)=>item.classList.toggle('toggle'))
-})
+document.addEventListener("DOMContentLoaded", function () {
+    var splide = new Splide(".splide", {
+        type: "fade",
+        rewind: true,
+        autoplay: true,
+        arrows: false,
+        classes: {
+            pagination: "splide__pagination splide__pagination--custom",
+            page: "splide__pagination__page splide__pagination__page--custom",
+        },
+        
+    });
+    splide.on( 'pagination:mounted', function ( data ) {
+        data.list.classList.add( 'splide__pagination--custom' );
+      } );
+    splide.mount();
+});
+
+const headerBurger = document.querySelector(".header-burger");
+headerBurger.addEventListener("click", () => {
+    document.querySelector(".header-bottom-links").classList.toggle("active");
+    document
+        .querySelectorAll(".header-bottom-link")
+        .forEach((item) => item.classList.toggle("toggle"));
+});
 
 const categoryTitle = document.querySelectorAll(".category-title");
 const allCategoryPosts = document.querySelectorAll(".product");
@@ -180,10 +205,36 @@ function changeActivePosition(activeItem) {
     activeItem.classList.add("active");
 }
 
-function show(smth, input){
-    document.querySelector(input).value = smth
+function show(smth, input) {
+    document.querySelector(input).value = smth;
 }
-let headerTopDropdown = document.querySelector('.header-top-dropdown')
-let headerBtmDropdown = document.querySelector('.header-btm-dropdown')
-headerTopDropdown.onclick = ()=>{headerTopDropdown.classList.toggle('active')}
-headerBtmDropdown.onclick = ()=>{headerBtmDropdown.classList.toggle('active')}
+
+let headerTopDropdown = document.querySelector(".header-top-dropdown");
+let headerBtmDropdown = document.querySelector(".header-btm-dropdown");
+headerTopDropdown.onclick = () => {
+    headerTopDropdown.classList.toggle("active");
+};
+headerBtmDropdown.onclick = () => {
+    headerBtmDropdown.classList.toggle("active");
+};
+
+
+$(".qt-plus").click(function () {
+    $(this)
+        .parent()
+        .children(".qt")
+        .html(parseInt($(this).parent().children(".qt").html()) + 1);
+
+});
+
+$(".qt-minus").click(function () {
+    child = $(this).parent().children(".qt");
+
+    if (parseInt(child.html()) > 1) {
+        child.html(parseInt(child.html()) - 1);
+    }
+});
+
+$(".product-heart").click(function(){
+    $(this).children('.fa-heart').toggleClass("active fas");;
+});
